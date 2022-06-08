@@ -1,0 +1,3 @@
+[submodule "src/common/common"]
+	path = src/common/common
+	url = git@github.com:Snowgooc/common.git
