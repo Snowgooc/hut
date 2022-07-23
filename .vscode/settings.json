@@ -22,6 +22,9 @@
         "streambuf": "cpp",
         "system_error": "cpp",
         "tuple": "cpp",
-        "array": "cpp"
+        "array": "cpp",
+        "new": "cpp",
+        "chrono": "cpp",
+        "thread": "cpp"
     }
 }

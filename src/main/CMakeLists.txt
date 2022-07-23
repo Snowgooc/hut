@@ -9,7 +9,7 @@ INCLUDE_DIRECTORIES (${SRC_ROOT}/common)
 # 需编译的文件
 FILE (GLOB_RECURSE MAIN_FILES
     "${SRC_ROOT}/main/*.cpp"
-    "${COMMON_PATH}/*.cpp"
+    # "${COMMON_PATH}/*.cpp"
 )
 
 
