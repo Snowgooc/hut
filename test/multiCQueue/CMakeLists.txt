@@ -1,0 +1,22 @@
+CMAKE_MINIMUM_REQUIRED (VERSION 3.7)
+
+
+# 引入公共库路径
+INCLUDE_DIRECTORIES (${COMMON_ROOT})
+INCLUDE_DIRECTORIES (${SRC_ROOT}/common)
+
+
+FILE (GLOB_RECURSE _FILES
+    "${TEST_ROOT}/multiCQueue/*.cpp"
+    "${COMMON_ROOT}/stllib/CQueue.cpp"
+    "${COMMON_ROOT}/stllib/MultiCQueue.cpp"
+)
+
+
+SET (EXE_NAME multiCQueue_t)
+
+
+ADD_EXECUTABLE(${EXE_NAME} ${_FILES})
+TARGET_LINK_LIBRARIES(${EXE_NAME} ${PROJECT_LIBRARY})
+
+
